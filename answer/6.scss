@@ -1,0 +1,21 @@
+$mater_height: 48px;
+
+.mater {
+  position: relative;
+  width: 300px;
+  height: $mater_height;
+  background: #888;
+  margin: 24px 0;
+  &Value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #0ff;
+    @for $i from 1 through 5 {
+      &--percent#{$i*20} {
+        width: $i*20%;
+        height: $mater_height;
+      }
+    }
+  }
+}

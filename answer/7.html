@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /*ここにスタイルをコピペします*/
+            .list::before {
+                clear: both;
+            }
+            .listItem {
+                float: left;
+                padding: 16px 0;
+            }
+            .listItem__image {
+
+            }
+            .listItem__text {
+                color: aqua;
+            }
+            .listItem__text--red {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>BEM</h3>
+        <img src="img/1.png" style="width:800px; border:2px solid #000"/>
+        <div class="list">
+            <div class="listItem">
+                <img class="listItem__image" src="a.png">
+                <div class="listItem__text">ここにテキストが入ります。</div>
+            </div>
+            <div class="listItem">
+                <img class="listItem__image" src="a.png">
+                <div class="listItem__text listItem__text--red">ここにテキストが入ります。</div>
+            </div>
+            <div class="listItem">
+                <img class="listItem__image" src="a.png">
+                <div class="listItem__text">ここにテキストが入ります。</div>
+            </div>
+        <div>
+    </body>
+</html>

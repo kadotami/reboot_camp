@@ -1,0 +1,17 @@
+@mixin marukado($val:16px) {
+  border-radius: $val;
+}
+
+.block {
+  @include marukado();
+  width: 300px;
+  height: 64px;
+  background: #0ff;
+}
+
+.block2 {
+  @include marukado(50%);
+  width: 120px;
+  height: 120px;
+  background: #0ff;
+}

@@ -1,0 +1,22 @@
+$separate-height: 15px;
+
+@mixin separator_common {
+  display: block;
+  content: "";
+  transform: rotate(3deg);
+  border: solid 2px #0f0;
+  width: 200%;
+  margin: 0 -50%;
+  height: $separate-height;
+}
+
+.block {
+  &:before {
+    @include separator_common();
+  }
+  &:after {
+    @include separator_common();
+    margin: -$separate-height -50% 0;
+    transform: rotate(-3deg);
+  }
+}

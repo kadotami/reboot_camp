@@ -1,0 +1,11 @@
+li {
+  &:nth-child(2n) {
+    color: #00f;
+    list-style: none;
+  }
+  &:nth-child(2n+1) {
+    color: #f00;
+    list-style-type: lower-greek;
+  }
+}
+
